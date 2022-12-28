@@ -1,0 +1,80 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/*********************************/
+/********* MEDIA QURIES *********/
+/*******************************/
+@media (width > 600px) {
+	.mobile {
+		display: none;
+	}
+}
+
+@media (width <= 600px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.submit-btn {
+		padding: 1.8rem 13.7rem;
+	}
+}
+
+@media (width <= 450px) {
+	.rating-container {
+		max-width: 35rem;
+
+		padding: 2.4rem;
+		padding-bottom: 3.2rem;
+	}
+
+	.text {
+		line-height: 1.4;
+	}
+
+	.rating-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0;
+
+		margin-bottom: 2.4rem;
+	}
+
+	.submit-btn {
+		padding: 1.6rem 11rem;
+	}
+
+	.thank-container {
+		max-width: 40rem;
+		padding: 3.6rem 2.4rem 1.8rem 2.4rem;
+	}
+}
+
+@media (width <= 375px) {
+	.rating-container {
+		max-width: 35rem;
+	}
+
+	.rating-btn {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.submit-btn {
+		padding: 1.6rem 11rem;
+	}
+
+	.thank-container {
+		max-width: 35rem;
+	}
+}

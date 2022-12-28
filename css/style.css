@@ -1,0 +1,197 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* **************************** */
+/******** GENERAL STYLE *********/
+/* **************************** */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Overpass", sans-serif;
+	background-color: hsl(216, 12%, 8%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+}
+
+.center {
+	text-align: center;
+}
+
+/* **************************** */
+/* For JS */
+/* **************************** */
+.active {
+	color: #fff !important;
+	background-color: hsl(216, 12%, 54%) !important;
+}
+
+.hidden {
+	/* display: none !important; */
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	transition: all 0.5s;
+}
+
+/* **************************** */
+/********* RATING STATE *********/
+/* **************************** */
+
+.rating-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	background-color: hsl(213, 19%, 18%);
+	max-width: 80rem;
+	max-height: 80rem;
+	border-radius: 2rem;
+	padding: 3.6rem;
+
+	/* display: none; */
+}
+
+.svg-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #3b424b;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	margin-bottom: 3.2rem;
+}
+
+.header {
+	color: #fff;
+	font-size: 3rem;
+	letter-spacing: -1px;
+	margin-bottom: 1.6rem;
+}
+
+.text {
+	color: hsl(217, 12%, 63%);
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.7;
+	margin-bottom: 2.4rem;
+}
+
+.rating-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2.4rem;
+
+	margin-bottom: 2.4rem;
+}
+
+.btn {
+	display: inline-block;
+	border-width: 0;
+	cursor: pointer;
+	transition: all 0.5s;
+	font-weight: 700;
+}
+
+.rating-btn {
+	align-self: center;
+	width: 5rem;
+	height: 5rem;
+
+	font-size: 1.5rem;
+	color: hsl(217, 12%, 63%);
+	background-color: #3b424b;
+
+	border-radius: 50%;
+	/* box-shadow: inset 0 0 400px 0 #3b424b; */
+}
+
+.rating-btn:hover {
+	background-color: hsl(25, 97%, 53%);
+	color: #fff;
+}
+
+.submit-btn {
+	display: block;
+	/* max-width: 60rem; */
+	padding: 1.4rem 13.7rem;
+
+	font-size: 1.5rem;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: hsl(25, 97%, 53%);
+
+	border-radius: 10rem;
+}
+
+.submit-btn:hover {
+	color: hsl(25, 97%, 53%);
+	background-color: #fff;
+}
+
+/* **************************** */
+/******** THAN YOU STATE ********/
+/* **************************** */
+.thank-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: hsl(213, 19%, 18%);
+	max-width: 80rem;
+	max-height: 80rem;
+	border-radius: 2rem;
+	padding: 4.2rem 4rem 2.4rem 4rem;
+	padding-bottom: 2.4rem;
+}
+
+.thank-icon {
+	margin-bottom: 3.2rem;
+}
+
+.select-text {
+	color: hsl(25, 97%, 53%);
+	background-color: #3b424b;
+
+	font-size: 1.8rem;
+	font-weight: 400;
+
+	border-radius: 50px;
+	padding: 0.8rem 1.6rem;
+	margin-bottom: 3.2rem;
+}
+
+/**************************/
+/********* FOOTER *********/
+/**************************/
+
+.attribution {
+	color: #fff;
+}
+
+.attribution a {
+	text-decoration: none;
+	color: hsl(25, 97%, 53%);
+}
