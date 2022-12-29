@@ -29,7 +29,7 @@ body {
 	justify-content: center;
 	align-items: center;
 
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .center {
@@ -106,7 +106,9 @@ body {
 	margin-bottom: 2.4rem;
 }
 
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
 	display: inline-block;
 	border-width: 0;
 	cursor: pointer;
@@ -114,7 +116,9 @@ body {
 	font-weight: 700;
 }
 
-.rating-btn {
+.rating-btn,
+.rating-btn:link,
+.rating-btn:visited {
 	align-self: center;
 	width: 5rem;
 	height: 5rem;
@@ -127,12 +131,15 @@ body {
 	/* box-shadow: inset 0 0 400px 0 #3b424b; */
 }
 
-.rating-btn:hover {
+.rating-btn:hover,
+.rating-btn:active {
 	background-color: hsl(25, 97%, 53%);
 	color: #fff;
 }
 
-.submit-btn {
+.submit-btn,
+.submit-btn:link,
+.submit-btn:visited {
 	display: block;
 	/* max-width: 60rem; */
 	padding: 1.4rem 13.7rem;
@@ -146,7 +153,8 @@ body {
 	border-radius: 10rem;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.submit-btn:active {
 	color: hsl(25, 97%, 53%);
 	background-color: #fff;
 }
